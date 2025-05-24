@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+}
+
+
+.head{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title,.catogory{
+    height: 50px;
+    display: flex;
+    align-items: end;
+}
+.catogory span{
+    text-transform: capitalize;
+    color: #E91E63;
+    font-weight: 700;
+}
+
+.details{
+    height: 70px;
+    /* display: flex; */
+   text-align: center;
+   margin: auto;
+   width: 80%;
+   border: solid #222;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    /* background-color: #E91E63; */
+margin-top:20px ;
+}
+
+.content{
+height: 70%;
+    width: 80%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content .leatersButton .leater{
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    background-color: #3f209c9d;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 3px;
+    /* border: none; */
+}
+.content .leatersButton .leater:hover{
+    background-color: transparent;
+    transform: scale(1.2);
+}
+
+
+
+.content .leatersButton .put{
+    background-color: transparent;
+}
+.content .leatersButton .leater:hover{
+transform: scale(1);
+}
+.content .finiched{
+    pointer-events: none;
+   
+
+}
+
+
+.gameDraw{
+    float: 1;
+    background-color: #f8f8f8;
+    padding: 20px;
+
+}
+.draw{
+    width: 170px;
+    height: 240px;
+    /* border-bottom: 4px solid #222; */
+position: relative;
+margin: auto;
+}
+.draw .rule{
+    width: 170px;
+    height: 240px;
+    border-bottom: 4px solid #222;
+    position: absolute;
+}
+
+.draw .the-stand::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+background-color: #222;
+height: 260px;
+left: 17%;
+top: -20px;
+margin-left:-2px ;
+}
+
+.draw .the-hung{
+    content: '';
+    position: absolute;
+    width: 95px;
+background-color: #222;
+height: 4px;
+left: 30px;
+
+/* margin-left:-2px ; */
+/* top:15px; */
+}
+.draw .the-hung1{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 4px;
+background-color: #222;
+left: 125px;
+/* margin-left:-2px ; */
+/* top:15px; */
+}
+
+.draw .the-rope{
+width:70px;
+height: 70px;
+border-radius: 50%;
+position: absolute;
+left: 90px;
+top:28px;
+border: 4px dashed #222;
+
+}
+
+.draw .the-man .head{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 4px #222;
+    position: absolute;
+    left:100px ;
+    top: 38px;
+}
+.draw .the-man .body{
+    position: absolute;
+    background-color: #222;
+    width: 4px;
+    height: 100px;
+    left: 125px;
+    top: 92px;
+}
+
+.draw .the-man .hands::before,.draw .the-man .hands::after{
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    top: 130px;
+}
+.draw .the-man .hands::before{
+left: 80px;
+transform: rotate(30deg);
+}
+.draw .the-man .hands::after{
+   left: 125px;
+    transform: rotate(-30deg);
+}
+
+.draw .the-man .legs::before,.draw .the-man .legs::after{
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    top: 200px;
+}
+.draw .the-man .legs::before{
+left: 80px;
+transform: rotate(-30deg);
+}
+.draw .the-man .legs::after{
+   left: 125px;
+    transform: rotate(30deg);
+}
+
+.feet{
+    width: 60%;
+    margin :auto;
+    /* background-color: rgba(255, 255, 255, 0.347); */
+text-align: center;
+    /* background-color: #E91E63 */
+}
+.any{
+    visibility: hidden;
+    /* visibility: visible; */
+}
+
+.feet span{
+
+    display: inline-block;
+    height: 4px;
+    width: 30px;
+    background-color: #222;
+    margin: 3px;
+
+}
+.feet .correctPut{
+    display: inline-block;
+    border: none;
+    color: #E91E63;
+    font-size: larger;
+    height: 0;
+}
+
